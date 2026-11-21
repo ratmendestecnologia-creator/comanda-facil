@@ -1,0 +1,25 @@
+COMANDA FÁCIL — APLICATIVO ANDROID (PROJETO PARA GERAR APK)
+
+Este diretório contém o projeto Android nativo que abre o sistema Comanda Fácil hospedado no computador Windows.
+
+COMO GERAR O APK
+1. No Windows, instale o Android Studio (versão atual) e o Android SDK Platform 35.
+2. Extraia o pacote completo e abra a pasta android-app no Android Studio (Open).
+3. Aguarde a sincronização do Gradle e aceite a instalação dos componentes solicitados.
+4. Para gerar APK de teste: Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. O APK será criado em app/build/outputs/apk/debug/app-debug.apk.
+6. Copie o APK para o celular e instale. Se solicitado, autorize a instalação desse arquivo.
+
+PRIMEIRA CONEXÃO
+1. Inicie o servidor no Windows executando INICIAR-WINDOWS.bat.
+2. No terminal, localize a linha "Celulares na mesma rede: http://...:3000".
+3. Conecte o Android ao mesmo Wi-Fi do computador.
+4. Abra o aplicativo e informe o endereço completo, por exemplo http://192.168.0.10:3000.
+5. Faça login com o usuário criado no sistema. O endereço fica salvo no celular.
+
+IMPORTANTE
+- O APK é o cliente Android; o servidor e o banco de dados continuam no computador Windows.
+- O computador precisa ficar ligado e o firewall do Windows deve permitir a conexão na rede privada.
+- Não use localhost no celular: localhost apontaria para o próprio telefone.
+- Não exponha a porta 3000 diretamente à internet. Use somente uma rede Wi-Fi confiável.
+- O projeto está preparado para gerar APK, mas o APK binário ainda precisa ser compilado no Android Studio com o SDK Android instalado.
